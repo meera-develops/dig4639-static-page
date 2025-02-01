@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Title from './components/Header';
+import MainContent from './components/Content';
+import End from './components/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,20 +19,24 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Static Page Project</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Welcome to my project.
+          This project has been created by Meera Bhola for DIG 4639.
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        There is a GitHub repo created to store and share this assignment
       </p>
+      <Title />
+      <MainContent />
+      <End />
     </>
   )
-}
+};
 
 export default App

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const mainContent = () => {
+const MainContent = () => {
     return (
         <div>
             <p><em>The Tortoise and the Hare</em> is a tale as old as time. This story teaches patience through a piece of fiction. In society, we are taught to go fast, yet this story reminds us we can take a break sometimes and still win.</p>
@@ -14,4 +14,4 @@ const mainContent = () => {
     )
 };
 
-export default mainContent
+export default MainContent
